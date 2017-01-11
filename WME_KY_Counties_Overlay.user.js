@@ -4,7 +4,7 @@
 // @namespace           https://greasyfork.org/en/users/9555
 // @description         Creates polygon layer for Counties in Kentucky
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
-// @version             3.2
+// @version             3.5
 // @grant               none
 // @copyright           2014 davielde
 // ==/UserScript==
@@ -72,32 +72,24 @@ function CurrentRaidLocation(raid_mapLayer){
         var raidMapCenter = mro_Map.getCenter();
         var raidCenterPoint = new OpenLayers.Geometry.Point(raidMapCenter.lon,raidMapCenter.lat);
         var raidCenterCheck = raid_mapLayer.features[i].geometry.components[0].containsPoint(raidCenterPoint);
-		var holes = raid_mapLayer.features[i].attributes.holes
-		
-        
+      var holes = raid_mapLayer.features[i].attributes.holes;
+
         if(raidCenterCheck === true){
+           var $span2 = $('#state-county');
 
-			var str = $('#topbar-container > div > div > div.location-info-region > div').text();
-			
-			var n2 = str.indexOf(" - ");
-			
-			if(n2 > 0){
-				var n = str.length;
-				var res = str.substring(n2+2, n);
-				var rescount = res.indexOf(" - ");
-				if(rescount>0){
-					var n3 = res.length;
-					var res2 = res.substring(rescount+2, n3);
-				}
-				var raidLocationLabel = '[County - ' + raid_mapLayer.features[i].attributes.number + '] - ' + res2;
+           if($span2.length === 0)
+           {
+               $span2 = $('<span>', {id:'state-county'});
+               $span2.text('County - ' + raid_mapLayer.features[i].attributes.number + ' - ');
+               $('.location-info').prepend($span2);
+           }
+           else
+           {
+               $span2.text('County - ' + raid_mapLayer.features[i].attributes.number + ' - ');
+           }
 
-			} else {
-				var raidLocationLabel = '[County - ' + raid_mapLayer.features[i].attributes.number + '] - ' + $('#topbar-container > div > div > div.location-info-region > div').text();
-						
-			}	
-			setTimeout(function(){$('#topbar-container > div > div > div.location-info-region > div').text(raidLocationLabel);},200);
-			 if (holes === "false") { break; }
-		}
+            if (holes === "false") { break; }
+       }
     }
 }
 
