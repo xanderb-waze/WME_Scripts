@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for Tennessee
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.1.1.47
+// @version             1.1.1.48
 // @author              xanderb
 // @description         This script localizes WME Validator for Tennessee, USA. You also need main package (WME Validator) installed.
 // @match               https://editor-beta.waze.com/*editor/*
@@ -10,26 +10,6 @@
 // @run-at              document-start
 // ==/UserScript==
 //
-/*
-  See Settings->About->Available checks for complete list of checks and their params.
-  Examples:
-  Enable #170 "Lowercase street name" but allow lowercase "exit" and "to":
-    "170.enabled": true,
-    "170.params": {
-        "regexp": "/^((exit|to) )?[a-z]/",
-    "},
-  Enable #130 "Custom check" to find a dot in street names, but allow dots at Ramps:
-    "130.enabled": true,
-    "130.params": {
-        "titleEN": "Street name with a dot",
-        "problemEN": "There is a dot in the street name (excluding Ramps)",
-        "solutionEN": "Expand the abbreviation or remove the dot",
-        "template": "${type}:${street}",
-        "regexp": "D/^[^4][0-9]?:.*\\./",
-    },
-    *Note: use D at the beginning of RegExp to enable debugging on JS console.
-    *Note: do not forget to escape backslashes in strings, i.e. use "\\" instead of "\".
-*/
 
 window.WME_Validator_United_States = {
   ".country": "United States",
@@ -204,12 +184,5 @@ window.WME_Validator_United_States = {
   "170.enabled": !0,
   "170.params": {
       regexp: "/^(?!(to) [^a-z])((S|N|W|E) )?[a-z]/"
-  },
-  "171.enabled": true,
-  "171.solutionLink": "W:Abbreviations_and_acronyms/USA#Standard_suffix_abbreviations",
-  "171.params": {
-    "regexp": "/((?!(\\bPhila|\\bPenna|.(\\bWash|\\bCmdr|\\bProf|\\bPres)|..(\\bAdm|\\bSte|\\bCpl|\\bMaj|\\bSgt|\\bRe[vc]|\\bR\\.R|\\bGov|\\bGen|\\bHon|\\bCpl)|...(\\bSt|\\b[JSD]r|\\bLt|\\bFt)|...(#| )[NEWSR])).{5}\\.|((?!(hila|enna|(\\bWash|\\bCmdr|\\bProf|\\bPres)|.(\\bAdm|\\bSte|\\bCpl|\\bMaj|\\bSgt|\\bRe[vc]|\\bR\\.R|\\bGov|\\bGen|\\bHon|\\bCpl)|..(\\bSt|\\b[JSD]r|\\bLt|\\bFt)|..(#| )[NEWSR])).{4}|(\\bhila|\\benna))\\.|((?!(ila|nna|(ash|mdr|rof|res)|(\\bAdm|\\bSte|\\bCpl|\\bMaj|\\bSgt|\\bRe[vc]|\\bR\\.R|\\bGov|\\bGen|\\bHon|\\bCpl)|.(\\bSt|\\b[JSD]r|\\bLt|\\bFt)|.(#| )[NEWSR])).{3}|\\b(ila|nna|ash|mdr|rof|res))\\.|((?!(la|na|(sh|dr|of|es)|(dm|te|pl|aj|gt|e[vc]|\\.R|ov|en|on|pl)|(\\bSt|\\b[JSD]r|\\bLt|\\bFt)|(#| )[NEWSR])).{2}|\\b(la|na|sh|dr|of|es|dm|te|pl|aj|gt|e[vc]|\\.R|ov|en|on|pl))\\.|(#|^)[^NEWSR]?\\.)|(((?!\\b(D|O|L)).|#|^)\'(?![sl]\\b)|(#|^)\'s|(?!\\b(In|Na)t).{3}\'l|(#|^).{0,2}\'l)|(Dr|St)\\.(#|$)|,|;|\\\\|((?!\\.( |#|$|R))\\..|(?!\\.( .|#.|$|R\\.))\\..{2}|\\.R(#|$|\\.R))|[Ee]x(p|w)y\\b|Tunl\\b|Long Is\\b|Brg\\b/",
-    "problemEN": "The street name has incorrect abbreviation, or character",
-    "solutionEN": "Check upper/lower case, a space before/after the abbreviation and the accordance with the abbreviation table. Remove any comma (,), backslash (\\), or semicolon (;)"
   },
 };
