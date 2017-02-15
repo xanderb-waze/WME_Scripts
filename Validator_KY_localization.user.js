@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for Kentucky
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.2.9601
+// @version             1.2.9602
 // @author              xanderb
 // @description         This script localizes WME Validator for Kentucky, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
@@ -10,47 +10,12 @@
 // @icon                data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAABK1JREFUWEftln1M1HUcx08xEVQej4fu4XfH8QMMtAtLLcJRyd1BwD1wPJ4EaYioJZh4xx0HeIRNmLL1j6atAZZzy9VfbuiWrtncLP9prVW60dMyjnBLXdqqrfX6Xd/YmLoVc6s/7rO993n8fj7v7/f3/R6oohKVqPxvZdpZuWDKarGCPtAPnhCpOZLrCS0TpmpN63BsZnWgJMXRPZBs9w1p3D31aqffJtL/XGZa6heGny0rCtusbgZbwmW21djFxHJEyaxkuAKrUh3dwRSHr47BuxnoRXsh8F1ilfc3cp/g+0X5nTJtr0gMl9skxZ5paVjAIPNUaemBqdIN19BfgYvgCzANBiARp9RCbDn+IHjreFntKwZ71xjDTqqd3UcZ+Ha6y2/D70lz+QchMwzBd/Dr010BWVk/R5Td0XBgylJ6gobj6FZIZYp0RMJWi0RuDGKXpyyW58mvhczj+L/gH2fNOfTZq2Xl/b3j56t2nbrSu3tichiMgGapMaSBwBiE1oiW8xOIVkLkEno7A1+44q7rPNvZ2+47dbmYQfauicmtoATEZ1QHEtJcgeY9pydjZU8oDgKjSVXeW8SNot38hDuhZscj4PAPVuuWqzabg1N0hCvKzTMe92JRpuI+lHP8x4QbEU5gJfEuLmisCM1fpqvtiyAjMzyHV7NEhGdFVxOM5dtf5E50POjuMUh1fZmrWvbFy42hGIi8xD3RidL7L7yOFIa/ywmMQmBTit3XxM79fIb9utpes762N+PRtuGjovz+ysrmfQt5DQFIZIjQrPD99byEpqyGfjM1eSI8V2BcCHOLcP+1GOr6sv/+xpqaYBw/Tnd8njnCsTzMwHHwpsI+ye4LghGRvqtwvOshmi/cewp9PqLvZuHeXTiSBH61btO0lOJGMMQlUeNvwt7GIBtaQSXooKmV+uvYu6hpQBdlVvc8gA4qO0bXKDYbK+TZ/Zzq7C5mzQA9ZbQvzelPZF0uNTsjBDCaKLxJ8piykMuyHP9zBruInQEniX8Ahol/SsPNxD4s2npwEf6XxJ2RHnbvJfQIuUEGuLH3YH8LkQD6AvoZiN/gHiyh9gSxoQgBjPdodIHgeexRFu5Ef0aTJlhryf1E7EliE+hO9Bm0cjLF5H7kOalp/A2xIfTv7FDzV1/v+8SOUBPmwqlZdxAcIvYUdX+wkXwV7zMO5xZBB2ij+BpFryuFvNsYYv3AybNZrDSHvYaa2zTMpuY1hpzjifkVkhDegf5VWxNMgJzyIxTi0yxl3XX8teS+J7YfnGbdx5Hd49RTcIPCeJgnYd+kUZD4q+gXOTZDpBAh1kHzpegd1GaQX4/dCqlYtPLOTehtEOtj4GNimbKOP9G+WvQWYIOIcjE3RpLKRQGzv0gklFP4mli+QZIekvT6OuAGbTqddrtep3sOuEBTbk5OnCRJG7GfJl9oNBi0rPFoNZp2fKtOq32Z/Ab8ivQSjx5SqyF3BLyxrv3Avf8ecBox/KMRQ7MVpqwsicY6WZbXYeuyTSY5y2gswC7Iy8srMBqNZvAIsWXUZxLPoz4BcmnEjDmynCxnZyfz0uL55iu4LynKDFPD3tTIsKhEJSr/rahUfwKIveLz8v1S/QAAAABJRU5ErkJggg==
 // ==/UserScript==
 //
-/*
-var KYVLVersion = "1.2.9481";
-var KYVLUpdateMessage = "yes";
-var KYVLVersionUpdateNotes = "KY Validator Localization has been updated to " + KYVLVersion;
-KYVLVersionUpdateNotes = KYVLVersionUpdateNotes + "\n" + "Please let me know if there are any issues or if you have any suggestions for new checks - xanderb";
-if (KYVLUpdateMessage === "yes") {
-  //alert the user for version updates
-  if (localStorage.getItem('URCommentVersion') === KYVLVersion) {
-    urcToConsole("Version - " + KYVLVersion);
-  } else {
-    alert(KYVLVersionUpdateNotes);
-    localStorage.setItem('KYVLVersion', KYVLVersion);
-  }
-}
-*/
-/*
-  See Settings->About->Available checks for complete list of checks and their params.
-  Examples:
-  Enable #170 "Lowercase street name" but allow lowercase "exit" and "to":
-    "170.enabled": true,
-    "170.params": {
-        "regexp": "/^((exit|to) )?[a-z]/",
-    "},
-  Enable #130 "Custom check" to find a dot in street names, but allow dots at Ramps:
-    "130.enabled": true,
-    "130.params": {
-        "titleEN": "Street name with a dot",
-        "problemEN": "There is a dot in the street name (excluding Ramps)",
-        "solutionEN": "Expand the abbreviation or remove the dot",
-        "template": "${type}:${street}",
-        "regexp": "D/^[^4][0-9]?:.*\\./",
-    },
-    *Note: use D at the beginning of RegExp to enable debugging on JS console.
-    *Note: do not forget to escape backslashes in strings, i.e. use "\\" instead of "\".
-*/
 
 window.WME_Validator_United_States = {
   ".country": "United States",
   ".codeISO": "US",
   ".author": "xanderb",
-  ".updated": "2016-10-03",
+  ".updated": "2017-02-15",
   ".link": "TODO: ",
   "128.enabled": true,
   "128.params": {
@@ -58,7 +23,7 @@ window.WME_Validator_United_States = {
     "problemEN": "Street suffix does not follow abbreviation rules",
     "solutionEN": "Rename the suffix Such as Road to Rd Please let me know about false positives",
     "template": "${street}",
-    "regexp": "!/(Unknown Name| A(cres?|ly|nnex|ve|r(cade|tery))| B(ay|ch|end|lvd|luf|roadway|ypass|YP|r(a(e|nch|ook))?|ottom|(ike|us)way|ayou)| C(enters|t|lb?|hase|ommons?|o(urse|rs|rner)|ONN|amp|r(es|est|k)?|ir|swy|tr|v|u(rve|toff)|yn)| D(am|ale|ell|onws|r)| E(ast|dgeway|n(d|t)|xit|states?|splanade|x(t|pwy))| F(airway|or(rges?|d|ks?)|wy|alls?|lats?)| G(ardens?|len|rv|r(ee)?n|a(p|te(way)?))| H(arborr|ills?|ollows?|ts|wy|ospital)| I(sle|nlt)| Junctions?| K(eys?|nolls?)| L(ocks?|dg|in[ke]|f|gts?|ndg|[np])|oop| M(all|dw|eadows|nr|anors|t|ns?|ile|o(hr|torway)|ews|sn)| N(eck|orth)| O(aks|ne|rchard|v(al|erpass))| P(a(ss|th|rade)|ike|romanade|orts?|l(ns|z)?|k(e|s)?|kwys?|ts?)| R(d|e(ach|st)|ow|i(se|ver)|amp|ailroad|nch|\.R\.|ailway|pds|idge|u(n(way)?|e)|te)| S(ho(als?|res?)|kwy|outh|p(ur|ngs|ring)|u(permarket|bdivision)|t(a|rut)|[qt]s?)| T(er|hwy|race|pke?|un|urn|r(l|fy)|ra(ck|in))| U(nderpass|pr)| V(iews?|i(llages?|sta)|ly|alleys|iaduct)| W(alk|ays?|ls?|est|oods|ynde?)| X(-ing|rd)| Yard|^$)( [SNEW]{1,2})?$|^([SNEW]{1,2} )?(Old )?(\\d{1,4} [SNEW]|Broadway|MBTA|Railroad|Amtrak|I-|IN-|IA-|KY?-|US-|LA?-|M[DNSO]?-|N[VJYCD]?-|S[CDRH]?-|RI?-|TN-|V[AT]-|W(V|IS)-|C[RH]-|Runway|Place |Parkway|Access |Avenue of |Circle of |State |County |The |to |(Left )?E(xit( to:)?|ntry) )/",
+    "regexp": "!/(Unknown Name| A(cres?|ly|nnex|ve|r(cade|tery))| B(ay|ch|end|lvd|luf|roadway|ypass|YP|r(a(e|nch|ook))?|ottom|(ike|us)way|ayou)| C(enters|t|lb?|hase|ommons?|o(urse|rs|rner)|ONN|amp|r(es|est|k)?|ir|swy|tr|v|u(rve|toff)|yn)| D(am|ale|ell|onws|r)| E(ast|dgeway|n(d|t)|xit|states?|splanade|x(t|pwy))| F(airway|or(rges?|d|ks?)|wy|alls?|lats?)| G(ardens?|len|rv|r(ee)?n|a(p|te(way)?))| H(arborr|ills?|ollows?|ts|wy|ospital)| I(sle|nlt)| Junctions?| K(eys?|nolls?)| L(ocks?|dg|in[ke]|f|gts?|ndg|[np])|oop| M(all|dw|eadows|nr|anors|t|ns?|ile|o(hr|torway)|ews|sn)| N(eck|orth)| O(aks|ne|rchard|v(al|er(look|pass)))| P(a(ss|th|rade)|ike|romanade|o(ints?|rts?)|l(ns|z)?|k(e|s)?|kwys?|ts?)| R(d|e(ach|st)|ow|i(se|ver)|amp|ailroad|nch|\.R\.|ailway|pds|idge|u(n(way)?|e)|te)| S(ho(als?|res?)|kwy|outh|p(ur|ngs|ring)|u(permarket|bdivision)|t(a|rut)|[qt]s?)| T(er|hwy|race|pke?|un|urn|r(l|fy)|ra(ck|in))| U(nderpass|pr)| V(iews?|i(llages?|sta)|ly|alleys|iaduct)| W(alk|ays?|ls?|est|oods|ynde?)| X(-ing|rd)| Yard|^$)( [SNEW]{1,2})?$|^([SNEW]{1,2} )?(Old )?(\\d{1,4} [SNEW]|Broadway|MBTA|Railroad|Amtrak|I-|IN-|IA-|KY?-|US-|LA?-|M[DNSO]?-|N[VJYCD]?-|S[CDRH]?-|RI?-|TN-|V[AT]-|W(V|IS)-|C[RH]-|Runway|Place |Parkway|Access |Avenue of |Circle of |State |County |The |to |(Left )?E(xit( to:)?|ntry) )/",
   },
   "128.solutionLink": "W:User:Xanderb/Abbreviations",
   "129.enabled": true,
