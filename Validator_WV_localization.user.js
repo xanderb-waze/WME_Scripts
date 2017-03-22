@@ -124,7 +124,7 @@ window.WME_Validator_United_States = {
     "problemEN": "Primary is No City and so is Alt City",
     "SolutionEN": "If segment is out of city limits it should have USPS city in Alt",
     "template": "${type}:${street}:${city}:${altCity[#]}",
-    "regexp": "/[1267]:.*::/"
+    "regexp": "/^[1267]:.*::$/"
   },
   "137.solutionLink": "W:West_Virginia/WV_MapRaid#City_Names",
   "138.enabled": true,
