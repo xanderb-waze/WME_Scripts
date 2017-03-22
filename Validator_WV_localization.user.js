@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for West Virginia
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.1.2.3
+// @version             1.1.3.0
 // @author              xanderb
 // @description         This script localizes WME Validator for West Virginia, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
@@ -34,7 +34,7 @@ window.WME_Validator_United_States = {
   ".country": "United States",
   ".codeISO": "US",
   ".author": "xanderb",
-  ".updated": "2017-03-20",
+  ".updated": "2017-03-21",
   ".link": "TODO: ",
   "128.enabled": true,
   "128.params": {
@@ -56,13 +56,13 @@ window.WME_Validator_United_States = {
   "129.solutionLink": "W:User:Xanderb/Abbreviations",
   "130.enabled": true,
   "130.params": {
-    "titleEN": "Short Parking Lot",
-    "problemEN": "Dead End Parking Lot is less that 30 meters",
-    "solutionEN": "Does it really need to be there?",
-    "template": "${deadEnd}:${typeRank}:${length}",
-    "regexp": "/1:7:([0-2]?[0-9])$/"
+    "titleEN": "Check Alt City Names",
+    "problemEN": "Alt City is Missing",
+    "solutionEN": "If segment is out of city limits it should have USPS city in Alt",
+    "template": "${altStreet[#]}:${altCity[#]}:${type}",
+    "regexp": "/^.+::[1267]$/"
   },
-  "130.solutionLink": "W:Best_map_editing_practice#Parking_Lots",
+  "130.solutionLink": "W:West_Virginia/WV_MapRaid#City_Names",
   "131.enabled": true,
   "131.params": {
     "titleEN": "Bad TTS Street name",
