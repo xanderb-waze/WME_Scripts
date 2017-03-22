@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for West Virginia
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.1.3.3
+// @version             1.1.3.4
 // @author              xanderb
 // @description         This script localizes WME Validator for West Virginia, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
@@ -120,13 +120,13 @@ window.WME_Validator_United_States = {
   "136.solutionLink": "W:Road_types/USA#Major_Highway",
   "137.enabled": true,
   "137.params": {
-    "titleEN": "Invalid Interstate Name",
-    "problemEN": "There seems to be an extra space there",
-    "SolutionEN": "Remove the extra space in the name",
-    "template": "${street}#${altStreet[#]}",
-    "regexp": "/I- /"
+    "titleEN": "Check Alt City Names",
+    "problemEN": "Primary is No City and so is Alt City",
+    "SolutionEN": "If segment is out of city limits it should have USPS city in Alt",
+    "template": "${type}:${street}:${city}:${altCity[#]}",
+    "regexp": "/[1267]:.*::/"
   },
-  "137.solutionLink": "W:Road_names/USA#United_States_Interstate_Highway_System",
+  "137.solutionLink": "W:West_Virginia/WV_MapRaid#City_Names",
   "138.enabled": true,
   "138.params": {
     "titleEN": "Invalid city name",
