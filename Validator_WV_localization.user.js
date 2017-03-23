@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for West Virginia
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.1.3.8
+// @version             1.1.3.9
 // @author              xanderb
 // @description         This script localizes WME Validator for West Virginia, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
@@ -34,7 +34,7 @@ window.WME_Validator_United_States = {
   ".country": "United States",
   ".codeISO": "US",
   ".author": "xanderb",
-  ".updated": "2017-03-22",
+  ".updated": "2017-03-23",
   ".link": "TODO: ",
   "128.enabled": true,
   "128.params": {
@@ -124,7 +124,7 @@ window.WME_Validator_United_States = {
     "problemEN": "Primary is No City and so is Alt City",
     "SolutionEN": "If segment is out of city limits it should have USPS city in Alt",
     "template": "${type}:${street}:${city}:${altCity[#]}",
-    "regexp": "/^[1267]:.*::(.*##.+|#.+)?$/"
+    "regexp": "/^[1267]:.+::(.*##.+|#.+)?$/"
   },
   "137.solutionLink": "W:West_Virginia/WV_MapRaid#City_Names",
   "138.enabled": true,
