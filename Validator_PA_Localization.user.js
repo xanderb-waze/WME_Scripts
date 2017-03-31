@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name                WME Validator Localization for Pennsylvania
-// @namespace           https://greasyfork.org/en/users/15052
-// @version             1.2.0
-// @author              Tythesly and xanderb
-// @credit              Credit to xanderb for the base template
+// @namespace           https://greasyfork.org/en/users/9555-xanderb
+// @version             1.2.1
+// @author              xanderb
 // @description         This script localizes WME Validator for Pennsylvania. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
 // @grant               none
@@ -20,7 +19,7 @@ window.WME_Validator_United_States = {
     "United States"
   ],
   ".codeISO": "US",
-  ".author": "tythesly and xanderb",
+  ".author": "xanderb",
   ".updated": "2017-03-30",
   ".link": "https://greasyfork.org/en/scripts/12279-wme-validator-localization-for-pennsylvania",
   ".lng": "EN-US",
