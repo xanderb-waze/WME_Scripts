@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for Utah
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.3.0
+// @version             1.3.1
 // @author              xanderb
 // @description         This script localizes WME Validator for Utah, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
@@ -15,7 +15,10 @@ Updated for US English translation and fixed issue with county road names 31Mar2
 */
 
 window.WME_Validator_United_States = {
-  ".country": "United States",
+  ".country": [
+    "Utah",
+    "United States"
+  ],
   ".codeISO": "US",
   ".author": "xanderb",
   ".updated": "2017-04-01",
