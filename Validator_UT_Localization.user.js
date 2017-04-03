@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for Utah
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.3.1
+// @version             1.3.2
 // @author              xanderb
 // @description         This script localizes WME Validator for Utah, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
@@ -20,8 +20,8 @@ window.WME_Validator_United_States = {
     "United States"
   ],
   ".codeISO": "US",
-  ".author": "xanderb",
-  ".updated": "2017-04-01",
+  ".author": "xanderb and herrchin",
+  ".updated": "2017-04-03",
   ".link": "https://greasyfork.org/scripts/18551-wme-validator-localization-for-utah",
   ".lng": "EN-US",
   "city.consider.en": "consider this city name:",
@@ -706,52 +706,34 @@ window.WME_Validator_United_States = {
   "121.problem": "The drivable segment has a very acute turn at node B",
   "121.solution.en": "Disable the sharp turn at node B or spread the segments at 30°",
   "121.solution": "Disable the sharp turn at node B or spread the segments at 30°",
-  "128.enabled": true,
-  "128.params": {
+  "128.title.en": "User-defined custom check (green)",
+  "128.title": "User-defined custom check (green)",
+  "128.problem.en": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
+  "128.problem": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
+  "128.solution.en": "Solve the issue",
+  "128.solution": "Solve the issue",
+  "129.title.en": "User-defined custom check (blue)",
+  "129.title": "User-defined custom check (blue)",
+  "129.problem.en": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
+  "129.problem": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
+  "129.solution.en": "Solve the issue",
+  "129.solution": "Solve the issue",
+  "130.enabled": true,
+  "130.params": {
     "titleEN": "Potentially Wrong Name Suffixes",
     "problemEN": "Street suffix does not follow abbreviation rules",
     "solutionEN": "Rename the suffix Such as Road to Rd Please let me know about false positives - xanderb",
     "template": "${street}",
     "regexp": "D!/(Unknown Name| A(cres?|ly|nnex|ve|r(cade|tery))| B(ay|ch|end|lvd|luf|roadway|ypass|YP|r(a(e|nch|ook))?|ottom|(ike|us)way|ayou)| C(enters|t|lb?|hase|ommons?|o(urse|rs|rner)|ONN|amp|r(es|est|k)?|ir|swy|tr|v|u(rve|toff)|yn)| D(am|ale|ell|onws|r)| E(ast|dgeway|n(d|t)|xit|states?|splanade|x(t|pwy))| F(airway|or(rges?|d|ks?)|wy|alls?|lats?)| G(ardens?|len|rv|r(ee)?n|a(p|te(way)?))| H(arborr|ills?|ollows?|ts|wy|ospital)| I(sle|nlt)| Junctions?| K(eys?|nolls?)| L(ocks?|dg|in[ke]|f|gts?|ndg|[np])|oop| M(all|dw|eadows|nr|anors|t|ns?|ile|o(hr|torway)|ews|sn)| N(eck|orth)| O(aks|ne|rchard|v(al|erpass))| P(a(ss|th|rade)|ike|romanade|orts?|l(ns|z)?|k(e|s)?|kwys?|ts?)| R(d|e(ach|st)|ow|i(se|ver)|amp|ailroad|nch|\.R\.|ailway|pds|idge|u(n(way)?|e)|te)| S(ho(als?|res?)|kwy|outh|p(ur|ngs|ring)|u(permarket|bdivision)|t(a|rut)|[qt]s?)| T(er|hwy|race|pke?|un|urn|r(l|fy)|ra(ck|in))| U(nderpass|pr)| V(iews?|i(llages?|sta)|ly|alleys|iaduct)| W(alk|ays?|ls?|est|oods|ynde?)| X(-ing|rd)| Yard|^$)( [SNEW]{1,2})?$|^([SNEW]{1,2} )?(Old )?(\\d{1,4} [SNEW]|Broadway|MBTA|Railroad|Amtrak|I-|IN-|IA-|KY?-|US-|LA?-|M[DNSO]?-|N[VJYCD]?-|S[CDRH]?-|RI?-|TN-|V[AT]-|W(V|IS)-|C[RH]-|Runway|Place |Parkway|Access |Avenue of |Circle of |State |County |The |to |(Left )?E(xit( to:)?|ntry) )/",
   },
-  "128.solutionLink": "W:Abbreviations_and_acronyms/USA",
-  "128.solutionLink": "W:Abbreviations_and_acronyms/USA",
-  "128.title.en": "User-defined custom check (green)",
-  "128.title": "Potentially Wrong Name Suffixes",
-  "128.problem.en": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
-  "128.problem": "Street suffix does not follow abbreviation rules",
-  "128.solution.en": "Solve the issue",
-  "128.solution": "Rename the suffix Such as Road to Rd Please let me know about false positives - xanderb",
-  "129.enabled": true,
-  "129.params": {
-    "titleEN": "Incorrect Highway Name",
-    "problemEN": "Highway names is invalid",
-    "solutionEN": "Rename the Street or Alt Street to the current standard",
-    "template": "${state}:${street}#${altStreet[#]}",
-    "regexp": "/Utah:.*(Ut Hwy |State Hwy |I- |U[Tt]-|SH-|State Rd |SR=|State Rte |^Rte |KY-0|U\.?[Ss]\.? [Hh](WY|wy|ighway))/"
-  },
-  "129.solutionLink": "W:Utah",
-  "129.title.en": "User-defined custom check (blue)",
-  "129.title": "Incorrect Highway Name",
-  "129.problem.en": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
-  "129.problem": "Highway names is invalid",
-  "129.solution.en": "Solve the issue",
-  "129.solution": "Rename the Street or Alt Street to the current standard",
-  "130.enabled": false,
-  "130.params": {
-    "titleEN": "Reserved Space",
-    "problemEN": "No Problemo",
-    "solutionEN": "Solve for X",
-    "template": "${type}:${street}",
-    "regexp": "/^18:.+$/"
-  },
-  "130.solutionLink": "W:Road_types/USA#Railroad",
-  "130.title.en": "Custom check",
-  "130.title": "TODO: Custom check",
-  "130.problem.en": "The segment matched custom conditions",
-  "130.problem": "TODO: The segment matched custom conditions",
+  "130.solutionLink": "W:Abbreviations_and_acronyms/USA",
+  "130.solutionLink": "W:Abbreviations_and_acronyms/USA",
+  "130.title.en": "User-defined custom check (green)",
+  "130.title": "Potentially Wrong Name Suffixes",
+  "130.problem.en": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
+  "130.problem": "Street suffix does not follow abbreviation rules",
   "130.solution.en": "Solve the issue",
-  "130.solution": "TODO: Solve the issue",
+  "130.solution": "Rename the suffix Such as Road to Rd Please let me know about false positives - xanderb",
   "131.enabled": true,
   "131.params": {
     "titleEN": "Not Utah",
@@ -782,6 +764,21 @@ window.WME_Validator_United_States = {
   "132.problem": "CS and Cs are not read correctly by TTS or County Hwy Name is wrong",
   "132.solution.en": "Solve the issue",
   "132.solution": "Check sources and change the street's name",
+  "133.enabled": true,
+  "133.params": {
+    "titleEN": "Walking Trail",
+    "problemEN": "Utah does not use the Walking Trail type except in extremely rare cases",
+    "solutionEN": "Delete the trail, unless it is a vehicle road, in which case correct its type",
+    "template": "${type}",
+    "regexp": "/^5$/"
+  },
+  "133.title.en": "Custom check",
+  "133.title": "Walking Trail",
+  "133.problem.en": "The segment matched custom conditions",
+  "133.problem": "Utah does not use the Walking Trail type except in extremely rare cases",
+  "133.solution.en": "Solve the issue",
+  "133.solution": "Delete the trail, unless it is a vehicle road, in which case correct its type",
+  "133.solutionLink": "W:Utah#Walking_Trails",
   "134.enabled": true,
   "134.severity": "warning",
   "134.params": {
@@ -798,6 +795,22 @@ window.WME_Validator_United_States = {
   "134.problem": "Alleys should be set to the PLR Road Type",
   "134.solution.en": "Solve the issue",
   "134.solution": "Change Road Type",
+//Find "cardinal #### cardinal" that are malformed
+  "135.enabled": true,
+  "135.params": {
+    "titleEN": "Missing cardinal directions",
+    "problemEN": "Utah roads of the N 2600 W format are properly expressed with leading and trailing directions",
+    "solutionEN": "Add the missing leading or trailing cardinal direction",
+    "template": "${state}:#${street}#${altStreet[#]}#",
+    "regexp": "/^Utah:.*#(\\d+ [NEWS]|\\d+)#/",
+  },
+  "135.solutionLink": "W:Utah#Statewide",
+  "134.title.en": "Custom check",
+  "134.title": "Missing cardinal directions",
+  "134.problem.en": "The segment matched custom conditions",
+  "134.problem": "Utah roads of the N 2600 W format are properly expressed with leading and trailing directions",
+  "134.solution.en": "Solve the issue",
+  "134.solution": "Add the missing leading or trailing cardinal direction",
   "136.enabled": true,
   "136.params": {
     "titleEN": "Wrong road type",
@@ -813,6 +826,21 @@ window.WME_Validator_United_States = {
   "136.problem": "All US Highways should be at least Major Highway (except BUS, SPUR, LOOP)",
   "136.solution.en": "Solve the issue",
   "136.solution": "Change the road type to Major Highway",
+  "137.enabled": true,
+  "137.params": {
+    "titleEN": "Incorrect Highway Name",
+    "problemEN": "Highway names is invalid",
+    "solutionEN": "Rename the Street or Alt Street to the current standard",
+    "template": "${state}:${street}#${altStreet[#]}",
+    "regexp": "/Utah:.*(Ut Hwy |State Hwy |I- |U[Tt]-|SH-|State Rd |SR=|State [Rr](TE|te|oute|OUTE)|U\.?[Ss]\.? [Hh](WY|wy|ighway))/"
+  },
+  "137.solutionLink": "W:Utah",
+  "137.title.en": "User-defined custom check (blue)",
+  "137.title": "Incorrect Highway Name",
+  "137.problem.en": "Some of the segment properties matched against the user-defined regular expression (see Settings→Custom)",
+  "137.problem": "Highway names is invalid",
+  "137.solution.en": "Solve the issue",
+  "137.solution": "Rename the Street or Alt Street to the current standard",
   "138.enabled": true,
   "138.params": {
     "titleEN": "Bad TTS Street name",
@@ -844,6 +872,9 @@ window.WME_Validator_United_States = {
   "139.solution.en": "Solve the issue",
   "139.solution": "If this cardinal should be spoken as a direction by TTS, make sure it has space on either side of it. \n If this cardinal should be spoken by TTS as a letter, follow it with a period. \n All cardinals should be capitalized.",
   "150.enabled": true,
+  "151.params": {
+    "n": 4
+  },
   "150.title.en": "No lock on Freeway",
   "150.title": "No lock on Freeway",
   "150.problem.en": "The Freeway segment should be locked at least to Lvl ${n}",
@@ -872,7 +903,7 @@ window.WME_Validator_United_States = {
   "152.solution": "Lock the segment",
   "153.enabled": true,
   "153.params": {
-    "n": 3
+    "n": 4
   },
   "153.title.en": "No lock on Ramp",
   "153.title": "No lock on Ramp",
