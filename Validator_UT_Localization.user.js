@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for Utah
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.3.2
+// @version             1.3.3
 // @author              xanderb
 // @description         This script localizes WME Validator for Utah, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
@@ -773,9 +773,9 @@ window.WME_Validator_United_States = {
     "regexp": "/^5$/"
   },
   "133.title.en": "Custom check",
-  "133.title": "Walking Trail",
+  "133.title": "Walking Trail / Routable Pedestrian Path",
   "133.problem.en": "The segment matched custom conditions",
-  "133.problem": "Utah does not use the Walking Trail type except in extremely rare cases",
+  "133.problem": "Utah does not use this segment type except in extremely rare cases",
   "133.solution.en": "Solve the issue",
   "133.solution": "Delete the trail, unless it is a vehicle road, in which case correct its type",
   "133.solutionLink": "W:Utah#Walking_Trails",
@@ -805,12 +805,12 @@ window.WME_Validator_United_States = {
     "regexp": "/^Utah:.*#(\\d+ [NEWS]|\\d+)#/",
   },
   "135.solutionLink": "W:Utah#Statewide",
-  "134.title.en": "Custom check",
-  "134.title": "Missing cardinal directions",
-  "134.problem.en": "The segment matched custom conditions",
-  "134.problem": "Utah roads of the N 2600 W format are properly expressed with leading and trailing directions",
-  "134.solution.en": "Solve the issue",
-  "134.solution": "Add the missing leading or trailing cardinal direction",
+  "135.title.en": "Custom check",
+  "135.title": "Missing cardinal directions",
+  "135.problem.en": "The segment matched custom conditions",
+  "135.problem": "Utah roads of the N 2600 W format are properly expressed with leading and trailing directions",
+  "135.solution.en": "Solve the issue",
+  "135.solution": "Add the missing leading or trailing cardinal direction",
   "136.enabled": true,
   "136.params": {
     "titleEN": "Wrong road type",
