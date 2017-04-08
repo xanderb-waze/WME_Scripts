@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name                WME Validator Maryland Localization
-// @version             0.1.12
+// @version             0.1.13
 // @author              subs5 and xanderb
 // @description         This script localizes WME Validator for United States. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
