@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name                WME Validator Localization for Australia
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.1.22
+// @version             1.1.23
 // @author              xanderb
 // @description         This script localizes WME Validator for Australia. You also need main package (WME Validator) installed.
-// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
+// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @grant               none
 // @run-at              document-start
 // ==/UserScript==
