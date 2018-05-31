@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name                WME Validator Maryland Localization
-// @version             0.1.13
+// @version             0.1.14
 // @author              subs5 and xanderb
 // @description         This script localizes WME Validator for United States. You also need main package (WME Validator) installed.
-// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
+// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @grant               none
 // @run-at              document-start
 // @namespace           https://greasyfork.org/en/users/7755-subs5
