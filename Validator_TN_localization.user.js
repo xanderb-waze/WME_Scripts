@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name                WME Validator Localization for Tennessee
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.1.2.2
+// @version             1.1.2.3
 // @author              xanderb
 // @description         This script localizes WME Validator for Tennessee, USA. You also need main package (WME Validator) installed.
-// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
+// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @grant               none
 // @run-at              document-start
 // @icon                data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAIAAAAJNFjbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAElElEQVRIS7WVe0xTVxzHb1vBOUA2RmKyxfCYQgoFYTJHIo847UQCwpYlTPdgstsWebgVx8NppiyhE4jBJRvIa4NN1JkUYpiTh9IFp7MtbaFIaQulZVhoBQEF2Xi03a9eKPce8L/u5vNHv6fnfH733HPuuVgX9v+CZqeDZqeDZqeD5nWRbd7cHxs7nJNjFAgAA5/fHxMj8/BAuq0LmhF6/PzGKisfaPRXm+/mnb2clleZlluZe/bKr81/GTX6sYqKHl9fZAgCmleh0eBOhzQGTkG1Z2g6xsKxEM4qwfiLLB5eUKNX64f5fHQsCTQvQ6ebqqoaWySbWLzw+JMpGd9T7CQ8wjOaWqWmmpouBgOVPAPNduj00fPn667+wQi2K47kV4u7BxkhXLKXDIPF+fGKyFhSApNGVesW0MTF3Rb3b2DiGIuDBeHl9W0Wi/VgaskbiaeTeGXxqaX2dmqNTTt4UrlGvX8/ogLQDDOdkCnC4k8dFzQIr9+7K+2fffqPbeUSKwa27DoGxrCEkxHvFToKuIZwY5ILHyt7YfaIkBIANZstvCGGNXQPO3r6u8Yns3PLbputVdTtsTODML4azTdNPD6In6MxcXZqSXun8uXwjGttUk1iIiKkBMBcV5fMK3PcGju1dFlvs1VfFkFhoh2eu0ZnnJ9fFN1TWazWksrfoDERL3tYX48IKaHLxWVmYMB7VzZhAfK+vbS0ZLlQ3y6Wa6dn5rbs/oJo937rWFf3IFF4YWHRJ/Y4NL4Ukfm0T0URIgVknp7jow8xvyOEBe63qUXMPVFLZ3FcQrkp2T9wC2o3hqXzvqo1j08TdrisVlvVxZsbYJsFppm1Q2QhQAlyLy+jkVSAhcd8ICDvGc+dRwP35n/0eUXhOWFD0x2wL1kso+bJmdm5BuGfbiG8YdVAl6sr2bn6C5C5u08bTbTX0xxGMq6h3As/t8OGIaJbePqj6ZmbnUq3HTzvNzP99+Z6RWRO6fRkIUAJsMmeKBTb9uU5pAHs/OjDgo2hPJgH/5uLOoPJUQBjftYpVcd9Wuro7Bf75YxEQhGiBTDsQVFR5td1jjEuwZyOO31G06Oaho75hUXdsMn12etN8ElWuQvpAaaf+sn+PlOFlAAoAwKkci1xSBBs3c0fNU8R6wk1Lglvv4uXvRKZBX/RVvoA8AB7VXplcDAipAQ7NNq4UPh+1urpBlvo2g0pUQCuhcUlxX19zplfXgjnOfoAH2aXTzQ2orZ1CsA3wN9/RGvwicqxj2RxYJtardZ/5xfAPmaeZLILMDimSGpg29t5Ju1Qt48PogLQTKBJSFCrDVujc5j7T1xvk2WeqfeN4ktkA/Y1WHOsvhbFV93XqePjEQkBmh1ok5IMGv2eFAF95XgIZOfLlDpyAUYIZ9/HxSODw5rkZGS4AzSTUQYFTYlEv3fI2YeKPeGYC8L3HCqyb5sgHOI7h4tbRPLJW7d6mUxkIBk0o9Dp/QcOwOpNjoyK5ZrmNklzq0Sq0E7+bZwQCtVxcWvPZwQ0PxcGo2f7dlVkZF9kZE9AwPM+kGtBs9NBs9NBs9NBs5PBsP8AQBwHmft1QcgAAAAASUVORK5CYII=
