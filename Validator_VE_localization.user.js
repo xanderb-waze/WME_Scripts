@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name                WME Validator Localization for Venezuela
-// @version             1.1.32
+// @version             1.1.34
 // @description         This script localizes WME Validator for Venezuela. You also need main package (WME Validator) installed.
-// @match               https://editor-beta.waze.com/*editor/*
-// @match               https://www.waze.com/*editor/*
+// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @grant               none
 // @run-at              document-start
 // ==/UserScript==
