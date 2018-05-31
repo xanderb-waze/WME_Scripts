@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name                WME Validator Localization for Indiana
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.1.2.2
+// @version             1.1.2.3
 // @author              xanderb
 // @description         This script localizes WME Validator for Indiana, USA. You also need main package (WME Validator) installed.
-// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/.*$/
+// @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @grant               none
 // @run-at              document-start
 // @icon                data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAEvUlEQVRIS7WWa1MbVRjHSwulUrJLEkIgQgKBQMgFTMiFJJD7rcluLkBuJAemeIEipdhhmJRC7bS2Vatt7dRRnGnBKmPH6jiOfaUfwPfO9Pv4bHaz2RwC+kJnfsnu/7/Pue5zztlTp0j0/4LrE2nuQC1i3PwHcH087bJiyu9foqfE3Xns0UngWkCnItcqKdUcAj1cMxyUNWd4BxChXlWmJo+C6yoyRf6rq6N33jW1SYusc7YDDSqzKmUGWuIccalcsh9cG+pTZVmnAbjmIdB2ybY242KlrKdAuxKz3lghGAlPJiTdBdZfojy33p5oEgkKYuBaQBOJSNm8XpuSK/KL0ahBOzuozvjtscnxVNxFwQvvVc0pVbkmgonEytbAdK8yhzluCy3umu9T5iKOCy9v9v92t3ch4oOwlo5S1BHDghvMVe2OQElP6Kdb/U4zVTNhHASKOqPwFObh1b2+P7+Ut1YyNWiPtYgFKUAi21gCimcCAf4lMdTuSOQw04/WdX5L0muNqwdn+ThpT95pSkJGRRzxqDPW1ZPXjcyo1XNcQQLGnfFZY25T8ot1nc9ePyyhYKeS+SdQ/0AmPEn5bFR7J5NFeu0MZKRmILu7aC9EAlZDGsxWccltocKT9IiG6Q1bEEbM1sZRJ45wmkC2cTpop+D1hidjP9wYfL1PFMKBS+npkJ2CyWwm62apAbhuCIHGtKknG8bX+yTw+arpk2UzmHhYQ9gLTGJPbyV/IKPbFwhZ0TCa8NjiU2bKbaYDVtozQR1eH/rjMwWM4NnW6OU5V9BGe8y0y0x5bJRRT0vk81CQKU4i+Zu5Pn55ww+efX99eL+sVSrzXivtttIWIy3rrhSodlOmyO1tGh+tm56VDQ/WzBqYdLY8BECHOotWY8JtpaD4kDp7UNZ+tz0sgRrYBiAoHwpkIb0qZaSKwkbOPh/1npdxmwTLxfj0y5tKYBvVzc9ZSYn2hHYWJxRKbhHkgoFcqJqsrCXkNIn2Nkc+Xh4T1gJI5IW/nophit4ypIQ+hG0VLT9+ONAsNHlwDRAIthpJV2WAQkTo9/vd0MBZzIdBQzzsTvUd4sD18cBye/C+8fG6obbE/g38XQekQcMuCPj66sirewo2VY4DNkGRcPTsBTr1ZEOXDfngce0ZiZT9dZvX3WX9i90BocMECLp1XlpanXV+9N44ZCpncpf2hcNdzUV6ipMVipHAr3dULlOCd3YWzU+3NLzUjcz+clu1knafEXSrXLI+vqKvtcpeIHNgLzsnPCBJNG2JPbxsZFZQ1VmiPSsp7ggCIG0+vTSe8gZ5BzgnrtSDNdAQaBXimP8KbZ3FhZj/StbRUT3OsIDG4LqCpKfBdwNsk7CZv7gxgB0DLHIF1yoOpqE7cGI83x4yjjIbMkbCHYZDWPhWWfz2C8+3NQHsJGDBNYlSvtC314bbpQ26GXMH30k6MRMwjKYPd9RwCmE+A66Zz5MSjKNZMA8iGTd8ry1ajHmYewKRgpcP3y/gMP9VpwaujzCmS+9tapOeMFQxrk/H3SGoaCU1fX/VeNLnEA+ujyDqLP18Wz3jZ3IRliHsnXDzQc7xzab+5CXNgesjwPqAetvqXwnIN6Slkz6HeHD930KivwE7Dh9Q/224igAAAABJRU5ErkJggg==
