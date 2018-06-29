@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                WME Validator Localization for Kentucky
 // @namespace           https://greasyfork.org/en/users/9555
-// @version             1.3.1003
+// @version             1.3.1004
 // @author              xanderb
 // @description         This script localizes WME Validator for Kentucky, USA. You also need main package (WME Validator) installed.
 // @include             /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
@@ -14,7 +14,7 @@ window.WME_Validator_United_States = {
   ".country": "United States",
   ".codeISO": "US",
   ".author": "xanderb",
-  ".updated": "2017-04-04",
+  ".updated": "2018-06-29",
   ".link": "https://greasyfork.org/en/scripts/8419-wme-validator-localization-for-kentucky",
   ".lng": "EN-US",
   "city.consider.en": "consider this city name:",
@@ -732,19 +732,19 @@ window.WME_Validator_United_States = {
   "129.solution": "Rename the Street or Alt Street to the current standard",
   "130.enabled": true,
   "130.params": {
-    "titleEN": "Name on Railroad",
-    "problemEN": "Names on Railroads are not needed for routing and clutter the app UI",
-    "solutionEN": "Remove the Names and Cities from Railroad segments",
-    "template": "${type}:${street}",
-    "regexp": "/^18:.+$/"
+    "titleEN": "Check Alt City Names",
+    "problemEN": "Alt City is Missing",
+    "solutionEN": "If segment is out of city limits it should have USPS city in Alt",
+    "template": "${altStreet[#]}:${altCity[#]}:${type}",
+    "regexp": "/^.+:(.*#+)?:+[1267]$/"
   },
-  "130.solutionLink": "W:Road_types/USA#Railroad",
+  "130.solutionLink": "W:USA/Road_names/City_names",
   "130.title.en": "Custom check",
-  "130.title": "Name on Railroad",
+  "130.title": "Check Alt City Names",
   "130.problem.en": "The segment matched custom conditions",
-  "130.problem": "Names on Railroads are not needed for routing and clutter the app UI",
+  "130.problem": "Alt City is Missing",
   "130.solution.en": "Solve the issue",
-  "130.solution": "Remove the Names and Cities from Railroad segments",
+  "130.solution": "If segment is out of city limits it should have USPS city in Alt",
   "131.enabled": true,
   "131.params": {
     "titleEN": "Not Kentucky",
@@ -830,6 +830,21 @@ window.WME_Validator_United_States = {
   "136.problem": "All US Highways should be at least Major Highway (except BUS, SPUR, LOOP)",
   "136.solution.en": "Solve the issue",
   "136.solution": "Change the road type to Major Highway",
+  "137.enabled": true,
+  "137.params": {
+    "titleEN": "Check Alt City Names",
+    "problemEN": "Primary is No City and so is Alt City",
+    "SolutionEN": "If segment is out of city limits it should have USPS city in Alt",
+    "template": "${type}:${street}:${city}:${altCity[#]}",
+    "regexp": "/^[1267]:.*::(.*##.+|#.+|.*#)?$/"
+  },
+  "137.solutionLink": "W:USA/Road_names/City_names",
+  "137.title.en": "Custom check",
+  "137.title": "Check Alt City Names",
+  "137.problem.en": "The segment matched custom conditions",
+  "137.problem": "Primary is No City and so is Alt City",
+  "137.solution.en": "Solve the issue",
+  "137.solution": "If segment is out of city limits it should have USPS city in Alt",
   "138.enabled": true,
   "138.params": {
     "titleEN": "Bad TTS Street name",
